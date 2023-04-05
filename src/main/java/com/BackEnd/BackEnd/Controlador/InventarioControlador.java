@@ -42,7 +42,6 @@ public class InventarioControlador {
                     Inventario.setCantidad(newUser.getCantidad());
                     return InventarioRepositorio.save(Inventario);
                 }).orElseThrow(()-> new ProductoNoEncontrado(id));
-
     }
 
     @DeleteMapping("/Inventario/{id}")

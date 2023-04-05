@@ -40,7 +40,6 @@ public class EmpleadoControlador {
                     Empleado.setPuesto(newUser.getPuesto());
                     return EmpleadoRepositorio.save(Empleado);
                 }).orElseThrow(()-> new EmpleadoNoEncontrado(id));
-
     }
 
     @DeleteMapping("/Empleado/{id}")
